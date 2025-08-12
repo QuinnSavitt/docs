@@ -1,0 +1,25 @@
+---
+title: "List Operators"
+---
+
+### `ad` [a: list] [b: any] -\> list
+
+Adds b to the end of a. Works in-place, also returns for legacy support
+
+**DEPRECATION NOTICE: **The return value will be removed due to redundancy in a future version of the interpreter
+
+### `rm` [a: list]
+
+Removes the last item of a
+
+### `pt` [a: list] [b: int] [c: any]
+
+**Primary Operator:  **Sets index b of list a to value c. Must be in-place.
+
+### `gt` [a: list] [b: int] -\> any
+
+Returns the item at index b of list a
+
+### `girth` [a: list, str] -\> int
+
+Returns the length of a

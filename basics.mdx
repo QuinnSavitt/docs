@@ -1,0 +1,33 @@
+---
+title: "tspmo Basics"
+---
+
+Welcome to tspmo, a language pieced together from brainrot and chronically online phrases. The language was built with the intention of being impossible to use, but as time has gone on and new features have been added, it has become somewhere between usable and unusable. Let's get aquanted first with the basic statement structure.
+
+### Structuring Statements
+
+All statements must start with `ts` and end with `pmo`. The only exceptions to this are statements related to [module imports](/modules).
+
+### Typing
+
+tspmo is **very** loosely typed. Not quite as loosely as something like C, but more akin to Python. Many functions/operators in tspmo are intended for one type, but have valid usages in other situations.
+
+### Primary Operators
+
+[Primary operators](/primaryOperators) are required to be the first token after `ts` , and all statements will evaluate down to one of them.
+
+### Secondary Operators
+
+Secondary operators are responsible for higher level processes. They can appear anywhere in statements. Secondary operators include [arithmetic operators](/arithmeticOperators), [list operators](/listOperators), and [more](/additionalOperators).
+
+### File Types
+
+Files should use the `.pmo` extension, though legacy support exists for `.tspmo`
+
+### Comments
+
+Comments are opened with `->` and closed with `<-`. Multi-line comments are supported.
+
+### Docstrings
+
+To create docstrings, leave a one-line comment on the first line after the function declaration. The interpreter will pick these up and fill them in VSCode.

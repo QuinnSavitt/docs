@@ -9,58 +9,43 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Language",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Intro",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "basics",
+              "types"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Operators",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "primaryOperators",
+              "arithmeticOperators",
+              "listOperators",
+              "additionalOperators"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Structures",
             "pages": [
               "essentials/markdown",
               "essentials/code",
               "essentials/images",
               "essentials/reusable-snippets"
             ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Standard Library",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Stdlib",
             "pages": [
               "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
             ]
           }
         ]

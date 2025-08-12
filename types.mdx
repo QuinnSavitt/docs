@@ -1,0 +1,34 @@
+---
+title: "Types"
+---
+
+### Integers
+
+Integer literals are defined by repeated `tun`s followed by a closing `sahur`. The value is defined as the number of `tun`s minus 1.
+
+```
+tun tun tun tun tun sahur -> 4 <-
+tun sahur -> 0 <-
+```
+
+### Booleans
+
+Boolean literals are defined as the following mapping: `sigma`-\>True `beta`-\>False.
+
+### Strings
+
+String literals are opened by `legit` and closed by `bro`.
+
+```
+legit Hello World! bro -> "Hello World!"
+```
+
+\*\*LIMITATION: \*\*Strings in tspmo cannot begin or end with a space.
+
+### Floats
+
+You cannot create float literals directly, but can through `bigf` divisions and `tf` conversions. [See [Arithmetic Operators](/arithmeticOperators)]
+
+### Lists
+
+Lists cannot be initialized containing data, but can be initialized empty using `ls`

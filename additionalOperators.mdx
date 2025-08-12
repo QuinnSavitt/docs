@@ -1,0 +1,48 @@
+---
+title: "Additional Operators"
+description: "Operators that don't belong anywhere else"
+---
+
+## String Operators
+
+### `stroke` [a: str] [b: str] -\> str
+
+Concatenates a and b
+
+**NOTE: **due to the limitations of strings in tspmo, concatenations cannot be split by spaces, leading to more limitations.
+
+### `BOOM` [a: str] -\> list
+
+Splits a by whitespace
+
+### `girth` [a: list, str] -\> int
+
+Returns the length of a
+
+## Conversions
+
+### `spill` [expr] -\> int
+
+Converts the evaluation of expr to int
+
+### `sayong` [expr] -\> bool
+
+Converts the evaluation of expr to bool
+
+### `tf` [expr] -\> float
+
+Converts the evaluation of expr to float
+
+### `lowkey` [expr] -\> str
+
+Converts the evaluation of expr to string
+
+## Other Operators
+
+### `chat?` [prompt: str] -\> str
+
+Requests user input with prompt. Returns the string input of the user.
+
+```
+ts rizz x chat? legit What's your name? bro pmo -> assign user input to x <-
+```
