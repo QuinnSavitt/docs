@@ -3,7 +3,9 @@
   "theme": "mint",
   "name": "tspmo Documentation",
   "colors": {
-    "primary": "#dbb012"
+    "primary": "#dbb012",
+    "light": "#dbb012",
+    "dark": "#dbb012"
   },
   "favicon": "/favicon.svg",
   "navigation": {
