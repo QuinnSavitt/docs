@@ -1,0 +1,24 @@
+---
+title: "v1.2.0 Full Changelog"
+description: "Added documentation, changes to standard library"
+---
+
+### Documentation Changes
+
+Full documentation is now available for tspmo\! If you are reading this, you've found it\! The new documentation includes all features of the language, as well as full documentation for all of the standard libraries.
+
+### Standard Library Updates
+
+The standard library has been updated to include more functionality and a new data type
+
+- **[NEW] ** `collections.pmo` has been added to the standard library. This is a metapackage that will include all new data structures added to the standard library.
+- **[NEW] **`stack.pmo` has been added to both the standard library and `collections.pmo`. Stack includes a constructor `STACK`, as well as O(1) push and pop methods.
+- **[UPDATED] **`list.pmo` has recieved a bunch of new methods:
+  - `snip`: split a list into two
+  - `i.mean`: return the integer mean
+  - `f.mean`: return the float mean
+  - `min`: return the minimum value
+  - `max`: return the maximum value
+- **[UPDATED] **`math.pmo` has recieved two new methods:
+  - `gcd`: return the greatest common denominator of two integers
+  - `lcm`: return the least common multiple of two integers
