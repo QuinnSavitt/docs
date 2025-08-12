@@ -1,0 +1,68 @@
+---
+title: "Control Flow"
+---
+
+## Conditionals
+
+### Flags
+
+Flags are precomputed values that determine whether conditional branches fire or not. They are internally represented by the “flag stack”.
+
+### `hawk` [expr -\> bool]
+
+\*\*PRIMARY OPERATOR: \*\*Pushes the boolean result of expr onto the flag stack.
+
+```
+ts hawk mogs tun tun tun sahur tun tun sahur pmo -> evaluates to sigma (True), <-
+                                                 -> pushes sigma to flagstack. <-
+```
+
+### `lion`
+
+\*\*PRIMARY OPERATOR: \*\*Fires conditional branch if the top of the flag stack is True.
+
+### `tiger`
+
+\*\*PRIMARY OPERATOR: \*\*Fires conditional branch if the top of the flag stack is False.
+
+### `fr`
+
+\*\*PRIMARY OPERATOR: \*\*Closes a conditional branch
+
+### `ong`
+
+\*\*PRIMARY OPERATOR: \*\*Pops the top of the flag stack.
+
+## Loops
+
+### Conditions
+
+Conditions are similar to flags in that they are a stacked structure that determines if a branch is fired, however these are computed each time they are checked. This is useful for bounding loops.
+
+### [expr-\>bool] `yo`
+
+A keyword that saves a condition. Legacy code uses `dih` to save these conditions, but this is no longer expressly necessary, though still recommended.
+
+```
+ts dih mogs x i yo pmo -> adds a condition [mogs x i yo] <-
+```
+
+### `kid`
+
+\*\*PRIMARY OPERATOR: \*\*Launch a loop bounded by the condition at the top of the stack.
+
+### `gurt`
+
+\*\*PRIMARY OPERATOR: \*\*Close a loop, check the condition to continue. If it fails, the condition will be automatically popped
+
+## Functions
+
+### Declaration
+
+Function declaration should take the format: `LEBRON` [arg]\* `ngl` where the \* represents 0 or more arguments. They are then followed by commands, and closed by `GOAT`.
+
+### Calling
+
+Calling a function follows the format: [fname] [arg]\*. Functions cannot be used as primary operators.
+
+**LIMITATION: **Arguments passed into functions _must_ be in the form of variables.
