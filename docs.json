@@ -16,7 +16,8 @@
             "pages": [
               "index",
               "basics",
-              "types"
+              "types",
+              "changelog"
             ]
           },
           {
@@ -31,10 +32,8 @@
           {
             "group": "Structures",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "controlFlow",
+              "modules"
             ]
           }
         ]
@@ -45,7 +44,9 @@
           {
             "group": "Stdlib",
             "pages": [
-              "api-reference/introduction"
+              "stdlib/collections",
+              "stdlib/list",
+              "stdlib/math"
             ]
           }
         ]
